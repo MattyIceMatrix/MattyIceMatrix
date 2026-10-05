@@ -70,7 +70,8 @@ def fetch_stats(login, token):
         contributionsCollection{ contributionCalendar{ weeks{ contributionDays{ contributionCount } } } }
         repositoriesContributedTo(contributionTypes:[COMMIT,PULL_REQUEST,REPOSITORY]){totalCount}
         repositories(ownerAffiliations:OWNER, first:100, isFork:false){
-          totalCount nodes{ nameWithOwner stargazerCount } } } }""", token, login=login)["user"]
+          totalCount nodes{ nameWithOwner stargazerCount
+            languages(first:20, orderBy:{field:SIZE, direction:DESC}){ edges{ size node{ name color } } } } } } }""", token, login=login)["user"]
     repos = d["repositories"]["nodes"]
     stats = {
         "repos": d["repositories"]["totalCount"],
@@ -96,25 +97,16 @@ def fetch_stats(login, token):
         commits += cc["totalCommitContributions"] + cc["restrictedContributionsCount"]
     stats["commits"] = commits
 
-    # lines of code: your additions/deletions in each repo you own
-    add = dele = 0
+    # code by language: GitHub's linguist byte counts (skips vendored, generated and docs files)
+    langs = {}
     for r in repos:
-        url = f"{API}/repos/{r['nameWithOwner']}/stats/contributors"
-        for _ in range(6):                      # GitHub answers 202 while it computes
-            try:
-                status, body = _req(url, token)
-            except urllib.error.HTTPError as e:
-                print(f"  skip {r['nameWithOwner']}: HTTP {e.code}")
-                body = None
-                break
-            if status == 200:
-                break
-            time.sleep(4)
-        for who in body or []:
-            if who.get("author") and who["author"]["login"].lower() == login.lower():
-                add += sum(w["a"] for w in who["weeks"])
-                dele += sum(w["d"] for w in who["weeks"])
-    stats.update(loc=add - dele, add=add, dele=dele)
+        for e in r["languages"]["edges"]:
+            n = e["node"]["name"]
+            size, color = langs.get(n, (0, e["node"]["color"]))
+            langs[n] = (size + e["size"], color or "#8b949e")
+    total = sum(v[0] for v in langs.values()) or 1
+    stats["languages"] = [[n, round(100 * v[0] / total, 1), v[1]]
+                          for n, v in sorted(langs.items(), key=lambda kv: -kv[1][0])]
     stats["updated"] = now.strftime("%Y-%m-%d")
     return stats
 
@@ -189,13 +181,26 @@ def build_lines(cfg, s):
     lines.append(pair("Repos", fmt(s.get("repos")), "Stars", fmt(s.get("stars")),
                       ("Contributed", fmt(s.get("contributed")))))
     lines.append(pair("Commits", fmt(s.get("commits")), "Followers", fmt(s.get("followers"))))
-    loc, add, dele = fmt(s.get("loc")), fmt(s.get("add")), fmt(s.get("dele"))
-    tail = f" ( {add}++, {dele}-- )"
-    key = "Lines of Code on GitHub"
-    dots = WIDTH - len(f". {key}: ") - len(loc) - len(tail)
-    lines.append([span("cc", ". "), span("key", key), ":", span("cc", " " + "." * max(dots, 1) + " "),
-                  span("value", loc), " ( ", span("addColor", f"{add}++"), ", ",
-                  span("delColor", f"{dele}--"), " )"])
+    # Code: Python 61% · JavaScript 22% · ...  (each name in its GitHub language colour)
+    key = "Code"
+    room = WIDTH - len(f". {key}: ") - 1
+    shown, used = [], 0
+    for name, pct, color in s.get("languages") or []:
+        item = f"{name} {pct:.0f}%"
+        add = len(item) + (3 if shown else 0)
+        if pct < 1 or used + add > room:
+            break
+        shown.append((item, color))
+        used += add
+    if not shown:
+        shown, used = [("-", None)], 1
+    dots = WIDTH - len(f". {key}: ") - used
+    parts = [span("cc", ". "), span("key", key), ":", span("cc", " " + "." * max(dots, 1) + " ")]
+    for k, (item, color) in enumerate(shown):
+        if k:
+            parts.append(span("cc", " · "))
+        parts.append(f'<tspan fill="{color}">{escape(item)}</tspan>' if color else span("value", item))
+    lines.append(parts)
     return lines
 
 
