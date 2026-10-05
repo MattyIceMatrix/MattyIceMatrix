@@ -1,0 +1,42 @@
+{
+  "login": "MattyIceMatrix",
+  "header": "matthew@moore",
+  "art": "portrait",
+  "birthday": null,
+  "age_fallback": "38 years",
+  "sections": [
+    [
+      ["OS", "Linux, Windows, Proxmox VE"],
+      ["Uptime", "{uptime}"],
+      ["Host", "UMGC Europe, Kaiserslautern DE"],
+      ["Kernel", "Information Systems Specialist"],
+      ["IDE", "VS Code + Claude"]
+    ],
+    [
+      ["Languages.Programming", "Python, JavaScript, Bash"],
+      ["Languages.Computer", "HTML, CSS, JSON, YAML"],
+      ["Languages.Real", "English"]
+    ],
+    [
+      ["Hobbies.Software", "Edge AI, Pen Testing, Homelab"],
+      ["Hobbies.Hardware", "Proxmox Lab, DUV Lithography"]
+    ],
+    ["Service"],
+    [
+      ["Army", "8 yrs, E-5 / Sergeant"],
+      ["Mission", "Edge AI Engineer"],
+      ["Certs", "ITIL 4, HTB Pen Tester, CITI"]
+    ],
+    ["Contact"],
+    [
+      ["GitHub", "MattyIceMatrix"]
+    ]
+  ],
+  "terminal_loop": [
+    ["whoami", "matthew · army vet · info systems · edge ai"],
+    ["echo $TARGET", "Edge AI Engineer"],
+    ["ls ~/lab", "proxmox/  pentest/  edge-ai/  homelab.md"],
+    ["uptime --service", "8 yrs US Army · E-5 / Sergeant"],
+    ["sudo make me-a-sandwich", "matthew is not in the sudoers file. This incident will be reported."]
+  ]
+}

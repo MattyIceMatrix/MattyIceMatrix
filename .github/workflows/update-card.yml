@@ -1,0 +1,32 @@
+# Re-renders the profile card daily with fresh GitHub stats and commits the SVGs.
+# Touches only dark_mode.svg, light_mode.svg and stats.json in this repo.
+name: Update profile card
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    paths: [profile.json, ascii.txt, portrait.json, generate.py]
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Render card
+        env:
+          # Optional repo secret ACCESS_TOKEN (classic PAT, scopes: repo, read:user)
+          # lets private-repo commits and lines of code count. Falls back to public-only.
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN || github.token }}
+        run: python generate.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg stats.json
+          git diff --cached --quiet || git commit -m "Update profile card"
+          git push
