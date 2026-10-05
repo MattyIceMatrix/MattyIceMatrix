@@ -432,9 +432,9 @@ text,tspan{white-space:pre}
 <text class="sc acc" font-weight="bold" x="554.3" y="602.0" style="animation-delay:5.030s,5.075s">GitHub Stﾐﾅ[</text>
 <text class="sc acc" font-weight="bold" x="554.3" y="602.0" style="animation-delay:5.075s,5.120s">GitHub Staﾅ}</text>
 <text class="pop" x="554.3" y="602.0" style="animation-delay:5.120s"><tspan class="acc" font-weight="bold">GitHub Stats</tspan></text>
-<text class="ln t" style="animation-delay:4.725s" x="535" y="622.0"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">4</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value">0</tspan>} | <tspan class="key">Stars</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">3</tspan></text>
-<text class="ln t" style="animation-delay:4.78s" x="535" y="642.0"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">184</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">1</tspan></text>
-<text class="ln t" style="animation-delay:4.835s" x="535" y="662.0"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">16,893</tspan> ( <tspan class="addColor">18,984++</tspan>, <tspan class="delColor">2,091--</tspan> )</text>
+<text class="ln t" style="animation-delay:4.725s" x="535" y="622.0"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ..... </tspan><tspan class="value">15</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value">1</tspan>} | <tspan class="key">Stars</tspan>:<tspan class="cc"> ............ </tspan><tspan class="value">10</tspan></text>
+<text class="ln t" style="animation-delay:4.78s" x="535" y="642.0"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">455</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">1</tspan></text>
+<text class="ln t" style="animation-delay:4.835s" x="535" y="662.0"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc"> . </tspan><tspan class="value">424,419</tspan> ( <tspan class="addColor">516,286++</tspan>, <tspan class="delColor">91,867--</tspan> )</text>
 <g class="ln" style="animation-delay:4.99s">
 <rect x="535" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="535" y="698.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
@@ -561,7 +561,7 @@ text,tspan{white-space:pre}
 <rect x="705" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="705" y="728.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="705" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="705" y="748.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="705" y="748.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
 <rect x="715" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="715" y="698.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="715" y="708.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
@@ -597,24 +597,24 @@ text,tspan{white-space:pre}
 <rect x="755" y="728.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="755" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="755" y="748.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="765" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="765" y="698.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="765" y="708.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="765" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="765" y="688.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
+<rect x="765" y="698.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
+<rect x="765" y="708.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
+<rect x="765" y="718.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
 <rect x="765" y="728.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="765" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="765" y="748.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="775" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="765" y="738.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
+<rect x="765" y="748.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
+<rect x="775" y="688.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
 <rect x="775" y="698.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="775" y="708.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="775" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="775" y="728.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="775" y="708.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
+<rect x="775" y="718.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
+<rect x="775" y="728.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
 <rect x="775" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="775" y="748.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="785" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="775" y="748.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
+<rect x="785" y="688.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
 <rect x="785" y="698.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="785" y="708.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="785" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="785" y="708.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
+<rect x="785" y="718.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
 <rect x="785" y="728.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="785" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="785" y="748.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
@@ -624,8 +624,8 @@ text,tspan{white-space:pre}
 <rect x="795" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="795" y="728.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="795" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="795" y="748.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="805" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="795" y="748.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
+<rect x="805" y="688.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
 <rect x="805" y="698.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="805" y="708.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="805" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
@@ -758,7 +758,7 @@ text,tspan{white-space:pre}
 <rect x="985" y="728.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="985" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="985" y="748.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="995" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="995" y="688.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
 <rect x="995" y="698.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="995" y="708.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="995" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
@@ -785,12 +785,12 @@ text,tspan{white-space:pre}
 <rect x="1025" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="1025" y="728.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="1025" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
-<rect x="1025" y="748.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
-<rect x="1035" y="688.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
+<rect x="1025" y="748.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
+<rect x="1035" y="688.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
 <rect x="1035" y="698.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
 <rect x="1035" y="708.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
-<rect x="1035" y="718.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
-<rect x="1035" y="728.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
+<rect x="1035" y="718.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
+<rect x="1035" y="728.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
 <rect x="1035" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="1035" y="748.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
 <rect x="1045" y="688.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
@@ -798,12 +798,12 @@ text,tspan{white-space:pre}
 <rect x="1045" y="708.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
 <rect x="1045" y="718.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
 <rect x="1045" y="728.0" width="8" height="8" rx="1.5" fill="#bf3989" fill-opacity="1"/>
-<rect x="1045" y="738.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
+<rect x="1045" y="738.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
 <rect x="1045" y="748.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="1055" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="1055" y="698.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
 <rect class="hs" x="531" y="686.0" width="6" height="72" fill="#0969da" filter="url(#bloom)"/>
-<text x="535" y="772.0" font-size="12px" class="cc" style="fill:#8c959f">215 contributions in the last year</text>
+<text x="535" y="772.0" font-size="12px" class="cc" style="fill:#8c959f">518 contributions in the last year</text>
 </g>
 <g class="ln" style="animation-delay:5.19s">
 <rect x="535.0" y="850.0" width="29.0" height="18" fill="#484f58"/>
