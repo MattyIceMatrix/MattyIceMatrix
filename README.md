@@ -38,3 +38,6 @@
 
 ### 🗂 Earlier prototypes (2026)
 Single-file web apps from the first phase of Moore Labs, all private: **OCTA Systems** (AI-governance dashboard), **SnapWave** (Wi-Fi planning and IoT fleet management), **Earth: Solved** (planetary scenario modelling), **ShellForge** (IT training) and **Precision Procurement Academy** (procurement training).
+
+### 🤝 Open-source contributions
+Gateway audit-log reports to Maxim AI (Bifrost, **fixed upstream**), IBM, NVIDIA, Docker, the Linux Foundation's agentgateway and Lasso Security; a comment on the LF Decentralized Trust Proof-of-Control draft; and the outside reviewers who have improved VLC-1. **[Full list →](CONTRIBUTIONS.md)**
