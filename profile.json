@@ -8,7 +8,7 @@
     [
       ["OS", "Linux, Windows, Proxmox VE"],
       ["Uptime", "{uptime}"],
-      ["Host", "UMGC Europe, Kaiserslautern DE"],
+      ["Host", "Moore Labs, Kaiserslautern DE"],
       ["Kernel", "Information Systems Specialist"],
       ["IDE", "VS Code + Claude"]
     ],
