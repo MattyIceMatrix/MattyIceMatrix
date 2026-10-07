@@ -803,6 +803,7 @@ text,tspan{white-space:pre}
 <rect x="1055" y="688.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect x="1055" y="698.0" width="8" height="8" rx="1.5" fill="#0969da" fill-opacity="1"/>
 <rect x="1055" y="708.0" width="8" height="8" rx="1.5" fill="#54aeff" fill-opacity="1"/>
+<rect x="1055" y="718.0" width="8" height="8" rx="1.5" fill="#c8d1dc" fill-opacity=".55"/>
 <rect class="hs" x="531" y="686.0" width="6" height="72" fill="#0969da" filter="url(#bloom)"/>
 <text x="535" y="772.0" font-size="12px" class="cc" style="fill:#8c959f">528 contributions in the last year</text>
 </g>
