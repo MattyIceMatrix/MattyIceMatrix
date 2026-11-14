@@ -21,7 +21,10 @@ jobs:
         env:
           # Optional repo secret ACCESS_TOKEN (classic PAT, scopes: repo, read:user)
           # lets private-repo commits and lines of code count. Falls back to public-only.
-          GH_TOKEN: ${{ secrets.ACCESS_TOKEN || github.token }}
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          # Public-only fallback: used when ACCESS_TOKEN is absent or expired,
+          # so an expired PAT can no longer freeze the card.
+          GH_TOKEN_FALLBACK: ${{ github.token }}
         run: python generate.py
       - name: Commit if changed
         run: |

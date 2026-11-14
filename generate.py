@@ -57,6 +57,18 @@ def _req(url, token, body=None):
         return resp.status, json.loads(resp.read() or b"null")
 
 
+def warn(msg):
+    """Surface a problem without failing the run.
+
+    On GitHub Actions this renders as a warning annotation on the job, so a
+    dead token is visible on the Actions tab without turning the daily card
+    refresh red and leaving the profile card stale.
+    """
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        print(f"::warning title=profile card::{msg}")
+    print(f"WARNING: {msg}", file=sys.stderr)
+
+
 def gql(query, token, **variables):
     _, out = _req(f"{API}/graphql", token, {"query": query, "variables": variables})
     if out.get("errors"):
@@ -818,17 +830,43 @@ def main():
     cfg = json.loads((ROOT / "profile.json").read_text())
     cache = ROOT / "stats.json"
     stats = json.loads(cache.read_text()) if cache.exists() else {}
-    token = os.environ.get("GH_TOKEN")
-    if token:
+
+    # Try the tokens in order of how much they can see: the optional classic PAT
+    # (ACCESS_TOKEN -> GH_TOKEN) counts private repos; the workflow's own
+    # github.token (GH_TOKEN_FALLBACK) sees public data only. An expired PAT
+    # returns 401, which used to abort the whole run and leave the card frozen
+    # at whatever stats.json last held -- so fall through to the next token
+    # instead, and only keep the cached card if every one of them fails.
+    candidates = [
+        ("GH_TOKEN", os.environ.get("GH_TOKEN")),
+        ("GH_TOKEN_FALLBACK", os.environ.get("GH_TOKEN_FALLBACK")),
+    ]
+    tried = [(n, t) for n, t in candidates if t]
+    seen, attempts = set(), []
+    for name, token in tried:
+        if token in seen:
+            continue
+        seen.add(token)
         try:
             stats = fetch_stats(cfg["login"], token)
             cache.write_text(json.dumps(stats, indent=2) + "\n")
-            print("stats:", stats)
-        except Exception as e:  # keep last good card, but fail loud
-            print(f"ERROR fetching stats: {e}", file=sys.stderr)
-            sys.exit(1)
+            print(f"stats via {name}:", stats)
+            if name != "GH_TOKEN" and os.environ.get("GH_TOKEN"):
+                warn("GH_TOKEN (the ACCESS_TOKEN secret) failed; rendered with "
+                     f"{name} instead, so private-repo commits and lines of code "
+                     "are not counted. Rotate the secret.")
+            break
+        except Exception as e:
+            attempts.append(f"{name}: {e}")
+            print(f"stats fetch failed via {name}: {e}", file=sys.stderr)
     else:
-        print("GH_TOKEN not set - rendering from cached stats.json")
+        if tried:
+            warn("could not fetch fresh stats (" + "; ".join(attempts)
+                 + ") - rendering the card from cached stats.json"
+                 + (f", last updated {stats.get('updated')}" if stats.get("updated") else ""))
+        else:
+            print("no token set - rendering from cached stats.json")
+
     for t in THEMES:
         render(t, cfg, stats)
     print("wrote dark_mode.svg, light_mode.svg")

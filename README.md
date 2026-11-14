@@ -7,12 +7,13 @@
 
 ## `$ ls ~/projects`
 
-15 repositories: 4 public, 11 private. Private projects are listed by what they do; their code, methods and results are shared only on request, under NDA where needed.
+24 repositories: 7 public, 17 private. Private projects are listed by what they do; their code, methods and results are shared only on request, under NDA where needed.
 
 ### ⚡ Edge AI
 
 | Project | What it does | Stack |
 |---|---|---|
+| **[LANTERN](https://github.com/MattyIceMatrix/lantern)** ![public](https://img.shields.io/badge/public-2ea043) | Offline edge-AI kit for flood search and rescue: perception, mission agents and a local LLM that keep working when the mobile network is gone. Phase 0 prototype, built in the open against the 2021 Ahr valley flood as the reference scenario. | `Python` `Jetson` `ROS 2` |
 | **KRYPTON · Proving Ground** ![private](https://img.shields.io/badge/private-30363d) | Safety and validation tooling for machine-learning models that run on industrial machine controllers. Research prototype on simulated data. | `Python` `ONNX` `Edge inference` |
 | **Bounce AI** ![private](https://img.shields.io/badge/private-30363d) | On-device basketball shooting coach (*Biomechanical Observation Unit for Neural Coaching at the Edge*). | `Python` `C` `TFLite` |
 
@@ -28,6 +29,12 @@
 | Project | What it does | Stack |
 |---|---|---|
 | **Moore Labs** ![private](https://img.shields.io/badge/private-30363d) | Offline, bilingual (German/English) compliance and security tools for European companies: EU AI Act, Cyber Resilience Act, NIS2, DORA, GDPR and e-invoicing. | `Python` |
+
+### 🗺 Engineering plans
+
+| Project | What it does | Stack |
+|---|---|---|
+| **[Project Atlas](https://github.com/MattyIceMatrix/project-atlas)** ![public](https://img.shields.io/badge/public-2ea043) | Public catalogue of 50 build-ready project briefs across edge AI, generative AI, AI safety, cyber defence, MLOps and geospatial. Each one sized, phased and gated, so the scope is fixed before any code is written. | `Markdown` `YAML` |
 
 ### 🌐 Live web apps
 
