@@ -63,15 +63,13 @@ I build in one direction: **AI you can hold accountable.** As agents start touch
 
 ### 🎓 Coursework projects (Udacity · MS in AI track)
 
-26 graded projects passed, each reviewed against a rubric.
+28 graded projects passed, each reviewed against a rubric. Eight nanodegree certificates earned: Agentic AI · Agentic AI Engineer with LangChain and LangGraph · AI Programming with Python · Artificial Intelligence · Data Analyst · Generative AI · Introduction to Machine Learning with PyTorch · Introduction to Machine Learning with TensorFlow. Plus courses in Model Context Protocol, Embedded Systems and Robotics Fluency, and AI Governance, Policy and the Public Good.
 
 | Area | Projects |
 |---|---|
 | **Agentic AI and LLM systems** | AI Red-Teaming · AgentsVille Trip Planner (multi-agent travel assistant) · AI-Powered Agentic Workflow for Project Management · Beaver's Choice Paper Company (multi-agent inventory, quoting and sales) · Report-Building Agent · Autonomous Knowledge Agent · PriceScout (agentic analyst, Model Context Protocol) · EcoHome Energy Advisor (LangGraph) · Market Research Agent · NASA Mission Intelligence (RAG-based chat system) · OmniTrainer (multimodal customer service trainer) · Teaching an LLM to Count |
-| **Machine learning, deep learning and classical AI** | Build an Adversarial Game Playing Agent · Build a Forward-Planning Agent · Build a Sudoku Solver · Part of Speech Tagging · Synthetic Handwriting Generator for CAPTCHA Systems · Create Your Own Image Classifier, PyTorch (CIFAR-10 CNN, 88.6% test accuracy) · Create Your Own Image Classifier, TensorFlow · Transformers for Movie Review Sentiment Analysis (76.8% test accuracy) · Finding Donors for CharityML · Creating Customer Segments with Arvato · A Data-Driven Approach to AI and Python |
+| **Machine learning, deep learning and classical AI** | Build an Adversarial Game Playing Agent · Build a Forward-Planning Agent · Build a Sudoku Solver · Part of Speech Tagging · Build a Transformer-Based Q&A System · Landmark Classification & Tagging for Social Media · Synthetic Handwriting Generator for CAPTCHA Systems · Create Your Own Image Classifier, PyTorch (CIFAR-10 CNN, 88.6% test accuracy) · Create Your Own Image Classifier, TensorFlow · Transformers for Movie Review Sentiment Analysis (76.8% test accuracy) · Finding Donors for CharityML · Creating Customer Segments with Arvato · A Data-Driven Approach to AI and Python |
 | **Data analysis** | Investigate a Dataset · Real World Data Wrangling with Python · Communicate Data Findings |
-
-Nanodegrees completed: AI Programming with Python, Introduction to Machine Learning with PyTorch.
 
 ### 🗂 Earlier prototypes (2026)
 Single-file web apps from the first phase of Moore Labs, all private: **OCTA Systems** (AI-governance dashboard), **SnapWave** (Wi-Fi planning and IoT fleet management), **Earth: Solved** (planetary scenario modelling), **ShellForge** (IT training) and **Precision Procurement Academy** (procurement training).
